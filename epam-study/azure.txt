@@ -4,3 +4,4 @@ rootuser
 hYVsfnB`4vwF}e4?
 
 104.40.218.145 - 1-ansible 
+104.45.19.224 - 2-ansible
