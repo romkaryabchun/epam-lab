@@ -11,3 +11,7 @@ The file needs to have the executable bit set for you. To do this, try using: ch
 The file needs to begin with a shebang, for example #!/usr/bin/env python3 which will tell the system to run the script using the python3 executable according to your environment
 PATH environment variable:
 You can add the current directory using export PATH=$PWD:$PATH
+
+#Install python3 and add module psutil
+sudo apt-get install gcc python3-dev
+pip3 install psutil
