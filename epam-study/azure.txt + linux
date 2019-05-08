@@ -15,3 +15,10 @@ You can add the current directory using export PATH=$PWD:$PATH
 #Install python3 and add module psutil
 sudo apt-get install gcc python3-dev
 pip3 install psutil
+
+If you only need to run a simple script (with a single file), 
+you can avoid writing a complete Dockerfile. In the examples below, 
+assume you store my_script.py in /usr/src/widget_app/, 
+and you want to name the container my-first-python-script:
+Python 3:
+docker run -it --rm --name my-first-python-script -v "$PWD":/usr/src/widget_app python:3 python my_script.py
