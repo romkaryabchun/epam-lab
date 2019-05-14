@@ -1,0 +1,25 @@
+# Nexus
+## Установка виртуальной машины Java
+
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+sudo apt-get install oracle-java8-unlimited-jce-policy
+
+## Качаем архив с Nexus
+
+wget http://www.sonatype.org/downloads/nexus-latest-bundle.tar.gz
+
+### под root’ом
+
+cp nexus-latest-bundle.tar.gz /usr/local/
+cd /usr/local/
+tar -xvzf nexus-latest-bundle.tar.gz
+ln -s nexus-<version> nexus
+
+## Заводим нового пользователя и делаем его владельцем распакованных файлов
+
+adduser --disabled-password --disabled-login nexus
+chown -R nexus:nexus ./nexus-2.11.3-01/
+chown -R nexus:nexus ./sonatype-work/
+
