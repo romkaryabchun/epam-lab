@@ -1,12 +1,5 @@
 ansible first
 
-rootuser
-hYVsfnB`4vwF}e4?
-
-104.40.218.145 - 1-ansible 
-52.166.247.138 - 2-docker
-
-
 The file needs to have the executable bit set for you. To do this, try using: chmod u+x validate_mapping_file.py
 The file needs to begin with a shebang, for example #!/usr/bin/env python3 which will tell the system to run the script using the python3 executable according to your environment
 PATH environment variable:
